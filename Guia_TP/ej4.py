@@ -5,5 +5,5 @@
 def anos_en_dias(edad):
     print("%d año/s = %d dias" % (edad, edad * 365))
 
-edad = int(input("Ingrese su edad: "))
+edad = int(input("Ingrese su edad(solo años): "))
 anos_en_dias(edad)
