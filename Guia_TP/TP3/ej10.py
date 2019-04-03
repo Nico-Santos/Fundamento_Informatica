@@ -9,6 +9,8 @@ def tipo_triangulo(h, c1, c2):
             print("Forma un triangulo obtusangulo")
         elif( h**2 < c1**2 + c2**2):
             print("Forma un triangulo acutangulo")
+        else:
+            pass
 
 h = float(input("Ingrese hipotenusa: "))
 c1 = float(input("Ingrese cateto: "))
