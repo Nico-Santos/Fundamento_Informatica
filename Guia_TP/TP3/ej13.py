@@ -17,10 +17,18 @@ else:
         estado_civil = input("Estado civil: soltero(s) o casado(c)): ")
         if(estado_civil == 's'):
             sueldo = sueldo_basico + antiguedad * 0.05 
+            print("Descuento jubilacion:", -jubilacion)
+            print("Descuento obra social:",-obra_social)
+            print("Descuento sindicato:", -sindicato)
+            print("Sueldo bascio:", sueldo_basico)
             print("Sueldo neto: $", sueldo - jubilacion - obra_social - sindicato)
 
         elif(estado_civil == 'c'):
             sueldo = sueldo_basico + antiguedad * 0.07
+            print("Descuento jubilacion:", -jubilacion)
+            print("Descuento obra social:",-obra_social)
+            print("Descuento sindicato:", -sindicato)
+            print("Sueldo bascio:", sueldo_basico)
             print("Sueldo neto: $", sueldo - jubilacion - obra_social - sindicato)
 
         else:
