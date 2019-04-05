@@ -14,7 +14,7 @@ else:
     if(antiguedad < 0):
         print("Dato no valido")
     else:
-        estado_civil = input("Estado civil (s o c): ")
+        estado_civil = input("Estado civil: soltero(s) o casado(c)): ")
         if(estado_civil == 's'):
             sueldo = sueldo_basico + antiguedad * 0.05 
             print("Sueldo neto: $", sueldo - jubilacion - obra_social - sindicato)
