@@ -4,7 +4,7 @@ def multiplo(a,b):
         if( (a % b) == 0):
             print("A es multiplo de B")
         else:
-            print("A no es multiplo de A")
+            print("A no es multiplo de B")
         if( (b % a) == 0):
              print("B es multiplo de A")
         else:
