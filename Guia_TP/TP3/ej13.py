@@ -9,8 +9,8 @@ else:
     jubilacion = sueldo_basico * 0.11
     obra_social = sueldo_basico * 0.03
     sindicato = sueldo_basico * 0.03
+    
     antiguedad = int(input("Antigüedad del empleado: "))
-
     if(antiguedad < 0):
         print("Dato no valido")
     else:
