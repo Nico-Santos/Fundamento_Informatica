@@ -21,7 +21,8 @@ else:
             print("Descuento obra social: -$", obra_social)
             print("Descuento sindicato: -$", sindicato)
             print("Sueldo basico: $", sueldo_basico)
-            print("Sueldo neto: $", sueldo - jubilacion - obra_social - sindicato)
+            print("Bonificacion por antiguedad: $:", antiguedad * 0.05)
+            print("\nSueldo neto: $", sueldo - jubilacion - obra_social - sindicato)
 
         elif(estado_civil == 'c'):
             sueldo = sueldo_basico + antiguedad * 0.07
@@ -29,7 +30,8 @@ else:
             print("Descuento obra social: -$", obra_social)
             print("Descuento sindicato: -$", sindicato)
             print("Sueldo basico: $", sueldo_basico)
-            print("Sueldo neto: $", sueldo - jubilacion - obra_social - sindicato)
+            print("Bonificacion por antiguedad: $:", antiguedad * 0.05)
+            print("\nSueldo neto: $", sueldo - jubilacion - obra_social - sindicato)
 
         else:
             print("Dato no valido")
