@@ -1,5 +1,5 @@
 #Verificar si la fecha ingresada (dd/mm/aa) es valida
-print("Verificacion de la fecha que introdusca\n")
+print("Verificacion de la fecha que introduzca\n")
 
 anio = int(input("Ingrese un año: "))
 
@@ -13,6 +13,12 @@ if( anio >= 1900):
                     print("La fecha que ingreso es valida")
                 elif( (anio % 4) != 0 and (anio % 400) != 0 and dia == 29):
                     print("La fecha que ingreso no es valida")
+        else:
+            print("Dato no valido")
+     else:
+        print("Dato no valido")
+else:
+    print("Dato no valido")
           
             
 
