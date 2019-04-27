@@ -10,12 +10,11 @@ import random
 menor = 95
 mayor = 10
 i = 1
-me = 0
-ma = 0
+me, ma = 0, 0
 
-
-while(i < 5):
+while(i < 3):
     nro = int(input("Ingreso nro: "))
+    #nro = random.randint(10, 99)
     if(nro >= 10 and nro <= 95):
         i += 1
         if(nro < menor):
@@ -24,19 +23,28 @@ while(i < 5):
         if(nro > mayor):
             mayor = nro
             ma = i-1
+    else:
+        print("Ingrese un nro valido")
         
 
-print("Mayor:", mayor, "Pos:", ma)
-print("Menor:", menor, "Pos:", me)
+print("\nMenor:", menor, "Pos:", me)
+print("Mayor:", mayor, "Pos:", ma, "\n")
 
-if(mayor == 27 or mayor == 64):
-    print("El mayor tiene raiz cubica entera")
-else:
+cubica, i = 1, 1
+me, ma = False, False
+
+
+while( cubica < mayor):
+    cubica = i * i * i
+    if(cubica % mayor == 0):
+        print("El mayor tiene raiz cubica entera")
+        ma = True
+    if(cubica % menor == 0):
+        print("El menor tiene raiz cubica entera")
+        me = True
+    i += 1
+
+if(ma == False):
     print("El mayor no tiene raiz cubica entera")
-
-if(menor == 27 or menor == 64):
-    print("El menor tiene raiz cubica entera")
-else:
+if(me == False):
     print("El menor no tiene raiz cubica entera")
-    
-
