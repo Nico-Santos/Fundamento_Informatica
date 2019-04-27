@@ -9,7 +9,7 @@ legajoMasEmp = 0
 legajoMenorEmp = 500
 impA, impB, impC = 0, 0, 0
 
-while(empleados < 10):
+while(empleados < 100):
     legajo = random.randint(1, 1000)
     cat = random.randint(ord('A'), ord('C'))
     salario = random.randint(1, 30000)
