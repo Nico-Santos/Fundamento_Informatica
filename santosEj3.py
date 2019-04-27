@@ -5,24 +5,24 @@ encontro = False
 
 nrox = random.randint(10, 99)
 print("Adivine el numero de dos cifras")
-print("Si quiere una ayuda escriba 'si', sino 'no'")
+print("Si quiere una ayuda escriba 'si', sino presione alguna tecla")
 
 while(encontro == False):
     
     nrou = int(input("Ingrese numero: "))
     if(nrou > 9 and nrou < 100):
         if(nrou == nrox and intentos < 5):
-            print("Ha encontrado el numero, EXCELENTE")
+            print("Ha encontrado el numero, EXCELENTE!! :O")
             print("Ayudas usadas:", intentos)
             encontro = True
 
         if(nrou == nrox and intentos > 5 and intentos < 10):
-            print("Ha encontrado el numero, BIEN")
+            print("Ha encontrado el numero, BIEN!! :)")
             print("Ayudas usadas:", intentos)
             encontro = True
 
         if(nrou == nrox and intentos > 10):
-            print("Ha encontrado el numero, HORRIBLE")
+            print("Ha encontrado el numero, HORRIBLE ;(")
             print("Ayudas usadas:", intentos)
             encontro = True
 
@@ -31,6 +31,7 @@ while(encontro == False):
     
         if(encontro == False):
             ayuda = input("Quiere una ayuda: ")
+            print("\n")
 
         if(ayuda == 'si'):
             if(nrou > nrox):
