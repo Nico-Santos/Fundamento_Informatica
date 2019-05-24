@@ -8,4 +8,3 @@ def buscar_valor(n, lista):
     return -1
 
 print(buscar_valor(6, [1, 2, 3, 6, 8, 10]))
-

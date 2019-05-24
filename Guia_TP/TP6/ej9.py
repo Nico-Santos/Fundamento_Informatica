@@ -5,7 +5,7 @@ import random
 lista = []
 listaBool = []
 
-#Ingresa largo de lista
+#Ingresa largo de "lista"
 N = int(input("Ingrese largo de lista: "))
 
 #Carga nros en "lista"
