@@ -48,3 +48,28 @@ def buscar_valor(n, lista):
         else:
             i += 1
     return -1
+
+
+def secuenciaMax(lista):
+    j, cant, pos = 0, 0, 0
+    limiteSup, ceros = 1, 0
+    posicion = [0]
+    
+    while( j < len(lista) ):
+        if(lista[j] != 0):
+           cant += 1 
+        else:
+            posicion.append(cant)
+            cant = 0
+        j += 1
+    #todo ok
+    for i in range(len(posicion)):
+        if(max(posicion) == posicion[i]):
+            pos = i
+    #todo ok
+    for i in range(pos+1):
+        limiteSup += posicion[i]
+        if(i != 0 and i != pos+1):
+            ceros += 1
+    
+    return(lista[pos+ceros:limiteSup+1])
