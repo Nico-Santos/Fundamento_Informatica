@@ -108,7 +108,7 @@ def busquedaBinaria(lista, buscado):
                     max = valMed - 1
             else:
                 pos = -1
-            return pos
+        return pos
     else:
         return -2
 '''
