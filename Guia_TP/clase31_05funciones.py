@@ -13,15 +13,13 @@ Parametros: lista
 Return: Porcentaje de valores encontrados
 '''
 def estanEnFibonacci(lista):
-    a, u, pertenece = 0, 1, 0
-    maximo = maximoNumero(lista) 
-    while(maximo > 0): 
+    a, u, pertenece = 0, 1, 0 
+    while(a < maximoNumero(lista)): 
         a = u - a
         u += a
         for i in range(len(lista)):
             if(lista[i] == a):
                 pertenece += 1
-        maximo -= 1
     return (pertenece*100) / len(lista)
 '''
 Funcion: Hallar el valor mas grande de una lista
