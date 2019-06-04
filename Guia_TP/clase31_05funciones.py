@@ -125,6 +125,21 @@ def busquedaSecuencial(lista, elemento):
         return -1
     return posicion
 
+def multiplos3Asc(lista):
+    aux = []
+    j, k = 0, 0
+    for i in range(len(lista)):
+        if(lista[i] % 2 != 0):
+            aux.append(lista[i])
+            lista[i] = 0
+    aux = ordenarAsc(aux)
+    while(k < len(lista)):
+        if(lista[k] == 0):
+            lista[k] = aux[j]
+            j += 1
+        k += 1
+    return lista
+
 def menu():
     print("(1) Cargar lista")
     print("(2) Porcentaje de numeros que pertenecen a la serie de Fibonacci")
