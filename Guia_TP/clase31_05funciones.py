@@ -129,7 +129,7 @@ def multiplos3Asc(lista):
     aux = []
     j, k = 0, 0
     for i in range(len(lista)):
-        if(lista[i] % 2 != 0):
+        if(lista[i] % 3 == 0 or i == 1):
             aux.append(lista[i])
             lista[i] = 0
     aux = ordenarAsc(aux)
